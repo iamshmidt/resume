@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="loading">
+      <div class="preloader">
+        <svg
+          id="logo"
+          width="555"
+          height="134"
+          viewBox="0 0 555 134"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M41.36 128.44C34.64 128.44 28.6133 127.32 23.28 125.08C17.9467 122.733 13.7333 119.533 10.64 115.48C7.54666 111.32 5.83999 106.573 5.51999 101.24H20.56C20.9867 105.613 23.0133 109.187 26.64 111.96C30.3733 114.733 35.2267 116.12 41.2 116.12C46.7467 116.12 51.12 114.893 54.32 112.44C57.52 109.987 59.12 106.893 59.12 103.16C59.12 99.32 57.4133 96.4933 54 94.68C50.5867 92.76 45.3067 90.8933 38.16 89.08C31.6533 87.3733 26.32 85.6667 22.16 83.96C18.1067 82.1467 14.5867 79.5333 11.6 76.12C8.71999 72.6 7.27999 68.0133 7.27999 62.36C7.27999 57.88 8.61332 53.7733 11.28 50.04C13.9467 46.3067 17.7333 43.3733 22.64 41.24C27.5467 39 33.1467 37.88 39.44 37.88C49.1467 37.88 56.9867 40.3333 62.96 45.24C68.9333 50.1467 72.1333 56.8667 72.56 65.4H58C57.68 60.8133 55.8133 57.1333 52.4 54.36C49.0933 51.5867 44.6133 50.2 38.96 50.2C33.7333 50.2 29.5733 51.32 26.48 53.56C23.3867 55.8 21.84 58.7333 21.84 62.36C21.84 65.24 22.7467 67.64 24.56 69.56C26.48 71.3733 28.8267 72.8667 31.6 74.04C34.48 75.1067 38.4267 76.3333 43.44 77.72C49.7333 79.4267 54.8533 81.1333 58.8 82.84C62.7467 84.44 66.1067 86.8933 68.88 90.2C71.76 93.5067 73.2533 97.8267 73.36 103.16C73.36 107.96 72.0267 112.28 69.36 116.12C66.6933 119.96 62.9067 123 58 125.24C53.2 127.373 47.6533 128.44 41.36 128.44Z"
+            stroke="#FFFAFA"
+            stroke-width="5"
+          />
+          <path
+            d="M137.434 37.72C144.047 37.72 150.02 39.16 155.354 42.04C160.687 44.8133 164.847 49.0267 167.834 54.68C170.927 60.3333 172.474 67.2133 172.474 75.32V127H158.074V77.4C158.074 68.6533 155.887 61.9867 151.514 57.4C147.14 52.7067 141.167 50.36 133.594 50.36C125.914 50.36 119.78 52.76 115.194 57.56C110.714 62.36 108.474 69.3467 108.474 78.52V127H93.9137V8.59999H108.474V51.8C111.354 47.32 115.3 43.8533 120.314 41.4C125.434 38.9467 131.14 37.72 137.434 37.72Z"
+            stroke="#FFFAFA"
+            stroke-width="5"
+          />
+          <path
+            d="M301.698 37.72C308.524 37.72 314.604 39.16 319.938 42.04C325.271 44.8133 329.484 49.0267 332.578 54.68C335.671 60.3333 337.217 67.2133 337.217 75.32V127H322.818V77.4C322.818 68.6533 320.631 61.9867 316.258 57.4C311.991 52.7067 306.178 50.36 298.818 50.36C291.244 50.36 285.217 52.8133 280.737 57.72C276.257 62.52 274.018 69.5067 274.018 78.68V127H259.617V77.4C259.617 68.6533 257.431 61.9867 253.057 57.4C248.791 52.7067 242.977 50.36 235.617 50.36C228.044 50.36 222.017 52.8133 217.537 57.72C213.057 62.52 210.817 69.5067 210.817 78.68V127H196.257V39.32H210.817V51.96C213.697 47.3733 217.537 43.8533 222.337 41.4C227.244 38.9467 232.631 37.72 238.497 37.72C245.857 37.72 252.364 39.3733 258.018 42.68C263.671 45.9867 267.884 50.84 270.658 57.24C273.111 51.0533 277.164 46.2533 282.818 42.84C288.471 39.4267 294.764 37.72 301.698 37.72Z"
+            stroke="#FFFAFA"
+            stroke-width="5"
+          />
+          <path
+            d="M368.621 25.08C365.848 25.08 363.501 24.12 361.581 22.2C359.661 20.28 358.701 17.9333 358.701 15.16C358.701 12.3867 359.661 10.04 361.581 8.11999C363.501 6.19999 365.848 5.23999 368.621 5.23999C371.288 5.23999 373.528 6.19999 375.341 8.11999C377.261 10.04 378.221 12.3867 378.221 15.16C378.221 17.9333 377.261 20.28 375.341 22.2C373.528 24.12 371.288 25.08 368.621 25.08ZM375.661 39.32V127H361.101V39.32H375.661Z"
+            stroke="#FFFAFA"
+            stroke-width="5"
+          />
+          <path
+            d="M395.036 82.84C395.036 73.88 396.85 66.04 400.476 59.32C404.103 52.4933 409.063 47.2133 415.356 43.48C421.756 39.7467 428.903 37.88 436.796 37.88C443.623 37.88 449.97 39.48 455.836 42.68C461.703 45.7733 466.183 49.88 469.276 55V8.59999H483.996V127H469.276V110.52C466.396 115.747 462.13 120.067 456.476 123.48C450.823 126.787 444.21 128.44 436.636 128.44C428.85 128.44 421.756 126.52 415.356 122.68C409.063 118.84 404.103 113.453 400.476 106.52C396.85 99.5867 395.036 91.6933 395.036 82.84ZM469.276 83C469.276 76.3867 467.943 70.6267 465.276 65.72C462.61 60.8133 458.983 57.08 454.396 54.52C449.916 51.8533 444.956 50.52 439.516 50.52C434.076 50.52 429.116 51.8 424.636 54.36C420.156 56.92 416.583 60.6533 413.916 65.56C411.25 70.4667 409.916 76.2267 409.916 82.84C409.916 89.56 411.25 95.4267 413.916 100.44C416.583 105.347 420.156 109.133 424.636 111.8C429.116 114.36 434.076 115.64 439.516 115.64C444.956 115.64 449.916 114.36 454.396 111.8C458.983 109.133 462.61 105.347 465.276 100.44C467.943 95.4267 469.276 89.6133 469.276 83Z"
+            stroke="#FFFAFA"
+            stroke-width="5"
+          />
+          <path
+            d="M526.361 51.32V103C526.361 107.267 527.268 110.307 529.081 112.12C530.895 113.827 534.041 114.68 538.521 114.68H549.241V127H536.121C528.015 127 521.935 125.133 517.881 121.4C513.828 117.667 511.801 111.533 511.801 103V51.32H500.441V39.32H511.801V17.24H526.361V39.32H549.241V51.32H526.361Z"
+            stroke="#FFFAFA"
+            stroke-width="5"
+          />
+        </svg>
+        <div class="motto">
+          <h2>Front-end Developer / Designer</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content">
+      <!-- //////////////////////// -->
+
+      <!-- //////////////////////// -->
+      <!-- navigation -->
+      <nav id="main-nav">
+        <div class="nav-container">
+          <!-- hamburger menu -->
+          <div class="ham">
+            <label for="check">
+              <input type="checkbox" id="check" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <div class="mob-menu" aria-hidden="true">
+            <ul>
+              <li>
+                <span
+                  ><a class="mobile-menu-items" data-is-contact="true" href="javascript:void(0);"
+                    >Contact</a
+                  ></span
+                >
+                <!-- <button class="mobile-menu-items">Contact</button> -->
+              </li>
+              <li>
+                <span
+                  ><a href="resume-attempt.pdf" class="mobile-menu-items"
+                    >Resume</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span
+                  ><a
+                    href="./pages/gallery.html"
+                    target="_blank"
+                    class="mobile-menu-items"
+                    >Gallery</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <!-- social -->
+          <div class="social fadedown-enter-done">
+            <a href="https://github.com/iamshmidt" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yuliia-shmidt-6a198121b/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+
+          <ul class="nav-menu">
+            <li><a id="desktop-item-contact" href="#">Contact</a></li>
+            <li><a href="resume-attempt.pdf" target="_blank">Resume</a></li>
+            <li><a href="./pages/gallery.html" target="_blank">Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Showcase -->
+      <div class="bg-blur">
+        <header id="showcase">
+          <div class="showcase-content">
+            <h1>Hi, my name is</h1>
+            <h2 class="big-heading">Yuliia Shmidt .</h2>
+            <div class="fadeup" style="animation-delay: 300ms">
+              <div class="message-container">
+                <h3>I like to build and design things for the web.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="something"></div>
+        </header>
+
+        <div class="inner">
+          <h1 class="blue-letter about-me-header">
+            About <span class="pink-letter"> Me.</span>
+          </h1>
+          <div class="about-me">
+            <h1 class="blue-letter mob-header">
+              About <span class="pink-letter"> Me.</span>
+            </h1>
+
+            <div>
+              <p>
+                Hello! My name is Yuliia and I like creating things that live on
+                the internet. I enjoy being the bridge between programming and
+                design, and feel right at home as a front end developer. Over
+                the past 1.5 years, coding has developed into a passion of mine,
+                specifically, in the realm of web development. I dedicate my
+                time to gaining proficiency in all intricacies of web
+                development in order to improve my skills as a developer and
+                problem solver. <br />
+                Here are few technologies I’ve been working with recently:
+              </p>
+              <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Java</li>
+                <li>Adobe Illustrator</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+
+            <div class="profile-pic">
+              <div class="bl-design">
+                <img src="./gallery-img/blue-bean.png" alt="" />
+              </div>
+              <div class="pink-design">
+                <img src="./gallery-img/pink-bean.png" alt="" />
+              </div>
+              <div class="gray-scale">
+                <img src="./gallery-img/yuliia-min.jpg" alt="yuiia" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Some Projects -->
+        <!-- CARDS -->
+        <!-- container for mobile -->
+        <div class="cards">
+          <div class="mob-heading">
+            <h1 class="pink-letter">
+              Some <span class="blue-letter"> Projects.</span>
+            </h1>
+          </div>
+          <div class="card card-1">
+            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <h2 class="card__title">Coffee shop project</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://coffee-shop-template.netlify.app/"
+                target="_blank"
+                >Launch <i class="fas fa-arrow-right"></i
+              ></a>
+              <a
+                class="github-launch"
+                href="https://github.com/iamshmidt/coffee-shop"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </p>
+          </div>
+
+          <div class="card card-5">
+            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <h2 class="card__title">Gallery</h2>
+            <p class="card__apply">
+              <a class="card__link" href="./pages/gallery.html"
+                >Launch <i class="fas fa-arrow-right"></i
+              ></a>
+            </p>
+          </div>
+          <div class="card card-3">
+            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <h2 class="card__title">Calculator</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://calculator-project-mode.netlify.app/"
+                target="_blank"
+                >Launch <i class="fas fa-arrow-right"></i
+              ></a>
+              <a
+                class="github-launch"
+                href="https://github.com/iamshmidt/calculator"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </p>
+          </div>
+          <div class="card card-2">
+            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <h2 class="card__title">Color Chooser</h2>
+            <p class="card__apply">
+              <a class="card__link" href="./pages/video-player.html"
+                >Launch <i class="fas fa-arrow-right"></i
+              ></a>
+              <a
+                class="github-launch"
+                href="https://github.com/iamshmidt/Java-Color-Chooser/tree/master"
+                target="_blank"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Some Projects -->
+        <section class="projects">
+          <div class="center">
+            <h1 class="pink-letter">
+              Some <span class="blue-letter"> Projects.</span>
+            </h1>
+          </div>
+
+          <div class="container">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <i class="fas fa-coffee"></i>
+                  <h3>Coffee-shop</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    This is my final project for Wev Dev Class, where the main
+                    goal was to demonstrate essential concepts of HTML and CSS,
+                    and responsive content.
+                  </p>
+                  <a
+                    href="https://coffee-shop-template.netlify.app/"
+                    target="_blank"
+                    type="button"
+                    >Launch</a
+                  >
+                  <a class="github-launch" href="#"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <i class="fas fa-image"></i>
+                  <h3>Gallery</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    In this section you will find my projects completed in Adobe
+                    Illustrator, Photoshop, and ProCreate. I tried to solve
+                    visual communication problems and demonstrate aesthetic
+                    development in every piece .
+                  </p>
+                  <a href="./pages/gallery.html" type="button" target="_blank"
+                    >Launch</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <i class="fas fa-calculator"></i>
+                  <h3>Calculator</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    This Calculator is built using Vanilla JS. It provides
+                    simple and advanced mathematical functions in a beautifully
+                    designed app. This app allows you to switch the color theme
+                    between light and dark.
+                  </p>
+                  <a
+                    href="https://calculator-project-mode.netlify.app/"
+                    target="_blank"
+                    type="button"
+                    >Launch</a
+                  >
+                  <a
+                    class="github-launch"
+                    href="https://github.com/iamshmidt/calculator"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <i class="fas fa-palette"></i>
+                  <h3>Color chooser</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    This customized video-player was built to demonstrate the
+                    Color Chooser program in use. The JColorChooser program
+                    allows you to adjust the color you want and get hex color
+                    code.
+                  </p>
+                  <a href="./pages/video-player.html" type="button" target="_blank"
+                    >Launch</a
+                  >
+                  <a
+                    class="github-launch"
+                    href="https://github.com/iamshmidt/Java-Color-Chooser/tree/master"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- form -->
+        <!-- CONTACT FORM -->
+
+        <div class="outter">
+          <div class="contact-heading">
+            <div id="contact"></div>
+            <h1 class="blue-letter">
+              Contact <span class="pink-letter"> Me.</span>
+            </h1>
+          </div>
+          <div class="gradient-container">
+            <img
+              src="./gallery-img/webflow-shape.png"
+              alt=""
+              class="gradient-animation"
+            />
+          </div>
+          <div class="container-contact100">
+            <div class="wrap-contact100">
+              <form
+                action="https://formsubmit.co/yuliia.shmidt@gmail.com"
+                method="POST"
+                class="contact100-form validate-form"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New email for you!"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://iamshmidt.com/pages/thankyou.html"
+                />
+                <span class="contact100-form-title"> Let's get in touch </span>
+
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Please enter your name"
+                >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Please enter email: e@a.x"
+                >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="email"
+                    placeholder="Email"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Please enter your message"
+                >
+                  <textarea
+                    class="input100"
+                    name="message"
+                    placeholder="Your Message"
+                    style="max-height: 215px !important"
+                  ></textarea>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                  <button class="contact100-form-btn">Send Email</button>
+                </div>
+              </form>
+
+              <div class="contact100-more">
+                Contact me:
+                <span class="contact100-more-highlight">+16313817717</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Designed & Built by Yuliia Shmidt</p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
+<!-- <svg
+  width="555"
+  height="134"
+  viewBox="0 0 555 134"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <mask
+    id="path-1-outside-1_1_7"
+    maskUnits="userSpaceOnUse"
+    x="-0.480011"
+    y="0.23999"
+    width="555"
+    height="134"
+    fill="black"
+  >
+    <rect fill="white" x="-0.480011" y="0.23999" width="555" height="134" />
+    <path
+      d="M41.36 128.44C34.64 128.44 28.6133 127.32 23.28 125.08C17.9467 122.733 13.7333 119.533 10.64 115.48C7.54666 111.32 5.83999 106.573 5.51999 101.24H20.56C20.9867 105.613 23.0133 109.187 26.64 111.96C30.3733 114.733 35.2267 116.12 41.2 116.12C46.7467 116.12 51.12 114.893 54.32 112.44C57.52 109.987 59.12 106.893 59.12 103.16C59.12 99.32 57.4133 96.4933 54 94.68C50.5867 92.76 45.3067 90.8933 38.16 89.08C31.6533 87.3733 26.32 85.6667 22.16 83.96C18.1067 82.1467 14.5867 79.5333 11.6 76.12C8.71999 72.6 7.27999 68.0133 7.27999 62.36C7.27999 57.88 8.61332 53.7733 11.28 50.04C13.9467 46.3067 17.7333 43.3733 22.64 41.24C27.5467 39 33.1467 37.88 39.44 37.88C49.1467 37.88 56.9867 40.3333 62.96 45.24C68.9333 50.1467 72.1333 56.8667 72.56 65.4H58C57.68 60.8133 55.8133 57.1333 52.4 54.36C49.0933 51.5867 44.6133 50.2 38.96 50.2C33.7333 50.2 29.5733 51.32 26.48 53.56C23.3867 55.8 21.84 58.7333 21.84 62.36C21.84 65.24 22.7467 67.64 24.56 69.56C26.48 71.3733 28.8267 72.8667 31.6 74.04C34.48 75.1067 38.4267 76.3333 43.44 77.72C49.7333 79.4267 54.8533 81.1333 58.8 82.84C62.7467 84.44 66.1067 86.8933 68.88 90.2C71.76 93.5067 73.2533 97.8267 73.36 103.16C73.36 107.96 72.0267 112.28 69.36 116.12C66.6933 119.96 62.9067 123 58 125.24C53.2 127.373 47.6533 128.44 41.36 128.44Z"
+    />
+    <path
+      d="M137.434 37.72C144.047 37.72 150.02 39.16 155.354 42.04C160.687 44.8133 164.847 49.0267 167.834 54.68C170.927 60.3333 172.474 67.2133 172.474 75.32V127H158.074V77.4C158.074 68.6533 155.887 61.9867 151.514 57.4C147.14 52.7067 141.167 50.36 133.594 50.36C125.914 50.36 119.78 52.76 115.194 57.56C110.714 62.36 108.474 69.3467 108.474 78.52V127H93.9137V8.59999H108.474V51.8C111.354 47.32 115.3 43.8533 120.314 41.4C125.434 38.9467 131.14 37.72 137.434 37.72Z"
+    />
+    <path
+      d="M301.698 37.72C308.524 37.72 314.604 39.16 319.938 42.04C325.271 44.8133 329.484 49.0267 332.578 54.68C335.671 60.3333 337.217 67.2133 337.217 75.32V127H322.818V77.4C322.818 68.6533 320.631 61.9867 316.258 57.4C311.991 52.7067 306.178 50.36 298.818 50.36C291.244 50.36 285.217 52.8133 280.737 57.72C276.257 62.52 274.018 69.5067 274.018 78.68V127H259.617V77.4C259.617 68.6533 257.431 61.9867 253.057 57.4C248.791 52.7067 242.977 50.36 235.617 50.36C228.044 50.36 222.017 52.8133 217.537 57.72C213.057 62.52 210.817 69.5067 210.817 78.68V127H196.257V39.32H210.817V51.96C213.697 47.3733 217.537 43.8533 222.337 41.4C227.244 38.9467 232.631 37.72 238.497 37.72C245.857 37.72 252.364 39.3733 258.018 42.68C263.671 45.9867 267.884 50.84 270.658 57.24C273.111 51.0533 277.164 46.2533 282.818 42.84C288.471 39.4267 294.764 37.72 301.698 37.72Z"
+    />
+    <path
+      d="M368.621 25.08C365.848 25.08 363.501 24.12 361.581 22.2C359.661 20.28 358.701 17.9333 358.701 15.16C358.701 12.3867 359.661 10.04 361.581 8.11999C363.501 6.19999 365.848 5.23999 368.621 5.23999C371.288 5.23999 373.528 6.19999 375.341 8.11999C377.261 10.04 378.221 12.3867 378.221 15.16C378.221 17.9333 377.261 20.28 375.341 22.2C373.528 24.12 371.288 25.08 368.621 25.08ZM375.661 39.32V127H361.101V39.32H375.661Z"
+    />
+    <path
+      d="M395.036 82.84C395.036 73.88 396.85 66.04 400.476 59.32C404.103 52.4933 409.063 47.2133 415.356 43.48C421.756 39.7467 428.903 37.88 436.796 37.88C443.623 37.88 449.97 39.48 455.836 42.68C461.703 45.7733 466.183 49.88 469.276 55V8.59999H483.996V127H469.276V110.52C466.396 115.747 462.13 120.067 456.476 123.48C450.823 126.787 444.21 128.44 436.636 128.44C428.85 128.44 421.756 126.52 415.356 122.68C409.063 118.84 404.103 113.453 400.476 106.52C396.85 99.5867 395.036 91.6933 395.036 82.84ZM469.276 83C469.276 76.3867 467.943 70.6267 465.276 65.72C462.61 60.8133 458.983 57.08 454.396 54.52C449.916 51.8533 444.956 50.52 439.516 50.52C434.076 50.52 429.116 51.8 424.636 54.36C420.156 56.92 416.583 60.6533 413.916 65.56C411.25 70.4667 409.916 76.2267 409.916 82.84C409.916 89.56 411.25 95.4267 413.916 100.44C416.583 105.347 420.156 109.133 424.636 111.8C429.116 114.36 434.076 115.64 439.516 115.64C444.956 115.64 449.916 114.36 454.396 111.8C458.983 109.133 462.61 105.347 465.276 100.44C467.943 95.4267 469.276 89.6133 469.276 83Z"
+    />
+    <path
+      d="M526.361 51.32V103C526.361 107.267 527.268 110.307 529.081 112.12C530.895 113.827 534.041 114.68 538.521 114.68H549.241V127H536.121C528.015 127 521.935 125.133 517.881 121.4C513.828 117.667 511.801 111.533 511.801 103V51.32H500.441V39.32H511.801V17.24H526.361V39.32H549.241V51.32H526.361Z"
+    />
+  </mask>
+  <path
+    d="M41.36 128.44C34.64 128.44 28.6133 127.32 23.28 125.08C17.9467 122.733 13.7333 119.533 10.64 115.48C7.54666 111.32 5.83999 106.573 5.51999 101.24H20.56C20.9867 105.613 23.0133 109.187 26.64 111.96C30.3733 114.733 35.2267 116.12 41.2 116.12C46.7467 116.12 51.12 114.893 54.32 112.44C57.52 109.987 59.12 106.893 59.12 103.16C59.12 99.32 57.4133 96.4933 54 94.68C50.5867 92.76 45.3067 90.8933 38.16 89.08C31.6533 87.3733 26.32 85.6667 22.16 83.96C18.1067 82.1467 14.5867 79.5333 11.6 76.12C8.71999 72.6 7.27999 68.0133 7.27999 62.36C7.27999 57.88 8.61332 53.7733 11.28 50.04C13.9467 46.3067 17.7333 43.3733 22.64 41.24C27.5467 39 33.1467 37.88 39.44 37.88C49.1467 37.88 56.9867 40.3333 62.96 45.24C68.9333 50.1467 72.1333 56.8667 72.56 65.4H58C57.68 60.8133 55.8133 57.1333 52.4 54.36C49.0933 51.5867 44.6133 50.2 38.96 50.2C33.7333 50.2 29.5733 51.32 26.48 53.56C23.3867 55.8 21.84 58.7333 21.84 62.36C21.84 65.24 22.7467 67.64 24.56 69.56C26.48 71.3733 28.8267 72.8667 31.6 74.04C34.48 75.1067 38.4267 76.3333 43.44 77.72C49.7333 79.4267 54.8533 81.1333 58.8 82.84C62.7467 84.44 66.1067 86.8933 68.88 90.2C71.76 93.5067 73.2533 97.8267 73.36 103.16C73.36 107.96 72.0267 112.28 69.36 116.12C66.6933 119.96 62.9067 123 58 125.24C53.2 127.373 47.6533 128.44 41.36 128.44Z"
+    fill="#C4C4C4"
+  />
+  <path
+    d="M137.434 37.72C144.047 37.72 150.02 39.16 155.354 42.04C160.687 44.8133 164.847 49.0267 167.834 54.68C170.927 60.3333 172.474 67.2133 172.474 75.32V127H158.074V77.4C158.074 68.6533 155.887 61.9867 151.514 57.4C147.14 52.7067 141.167 50.36 133.594 50.36C125.914 50.36 119.78 52.76 115.194 57.56C110.714 62.36 108.474 69.3467 108.474 78.52V127H93.9137V8.59999H108.474V51.8C111.354 47.32 115.3 43.8533 120.314 41.4C125.434 38.9467 131.14 37.72 137.434 37.72Z"
+    fill="#C4C4C4"
+  />
+  <path
+    d="M301.698 37.72C308.524 37.72 314.604 39.16 319.938 42.04C325.271 44.8133 329.484 49.0267 332.578 54.68C335.671 60.3333 337.217 67.2133 337.217 75.32V127H322.818V77.4C322.818 68.6533 320.631 61.9867 316.258 57.4C311.991 52.7067 306.178 50.36 298.818 50.36C291.244 50.36 285.217 52.8133 280.737 57.72C276.257 62.52 274.018 69.5067 274.018 78.68V127H259.617V77.4C259.617 68.6533 257.431 61.9867 253.057 57.4C248.791 52.7067 242.977 50.36 235.617 50.36C228.044 50.36 222.017 52.8133 217.537 57.72C213.057 62.52 210.817 69.5067 210.817 78.68V127H196.257V39.32H210.817V51.96C213.697 47.3733 217.537 43.8533 222.337 41.4C227.244 38.9467 232.631 37.72 238.497 37.72C245.857 37.72 252.364 39.3733 258.018 42.68C263.671 45.9867 267.884 50.84 270.658 57.24C273.111 51.0533 277.164 46.2533 282.818 42.84C288.471 39.4267 294.764 37.72 301.698 37.72Z"
+    fill="#C4C4C4"
+  />
+  <path
+    d="M368.621 25.08C365.848 25.08 363.501 24.12 361.581 22.2C359.661 20.28 358.701 17.9333 358.701 15.16C358.701 12.3867 359.661 10.04 361.581 8.11999C363.501 6.19999 365.848 5.23999 368.621 5.23999C371.288 5.23999 373.528 6.19999 375.341 8.11999C377.261 10.04 378.221 12.3867 378.221 15.16C378.221 17.9333 377.261 20.28 375.341 22.2C373.528 24.12 371.288 25.08 368.621 25.08ZM375.661 39.32V127H361.101V39.32H375.661Z"
+    fill="#C4C4C4"
+  />
+  <path
+    d="M395.036 82.84C395.036 73.88 396.85 66.04 400.476 59.32C404.103 52.4933 409.063 47.2133 415.356 43.48C421.756 39.7467 428.903 37.88 436.796 37.88C443.623 37.88 449.97 39.48 455.836 42.68C461.703 45.7733 466.183 49.88 469.276 55V8.59999H483.996V127H469.276V110.52C466.396 115.747 462.13 120.067 456.476 123.48C450.823 126.787 444.21 128.44 436.636 128.44C428.85 128.44 421.756 126.52 415.356 122.68C409.063 118.84 404.103 113.453 400.476 106.52C396.85 99.5867 395.036 91.6933 395.036 82.84ZM469.276 83C469.276 76.3867 467.943 70.6267 465.276 65.72C462.61 60.8133 458.983 57.08 454.396 54.52C449.916 51.8533 444.956 50.52 439.516 50.52C434.076 50.52 429.116 51.8 424.636 54.36C420.156 56.92 416.583 60.6533 413.916 65.56C411.25 70.4667 409.916 76.2267 409.916 82.84C409.916 89.56 411.25 95.4267 413.916 100.44C416.583 105.347 420.156 109.133 424.636 111.8C429.116 114.36 434.076 115.64 439.516 115.64C444.956 115.64 449.916 114.36 454.396 111.8C458.983 109.133 462.61 105.347 465.276 100.44C467.943 95.4267 469.276 89.6133 469.276 83Z"
+    fill="#C4C4C4"
+  />
+  <path
+    d="M526.361 51.32V103C526.361 107.267 527.268 110.307 529.081 112.12C530.895 113.827 534.041 114.68 538.521 114.68H549.241V127H536.121C528.015 127 521.935 125.133 517.881 121.4C513.828 117.667 511.801 111.533 511.801 103V51.32H500.441V39.32H511.801V17.24H526.361V39.32H549.241V51.32H526.361Z"
+    fill="#C4C4C4"
+  />
+  <path
+    d="M41.36 128.44C34.64 128.44 28.6133 127.32 23.28 125.08C17.9467 122.733 13.7333 119.533 10.64 115.48C7.54666 111.32 5.83999 106.573 5.51999 101.24H20.56C20.9867 105.613 23.0133 109.187 26.64 111.96C30.3733 114.733 35.2267 116.12 41.2 116.12C46.7467 116.12 51.12 114.893 54.32 112.44C57.52 109.987 59.12 106.893 59.12 103.16C59.12 99.32 57.4133 96.4933 54 94.68C50.5867 92.76 45.3067 90.8933 38.16 89.08C31.6533 87.3733 26.32 85.6667 22.16 83.96C18.1067 82.1467 14.5867 79.5333 11.6 76.12C8.71999 72.6 7.27999 68.0133 7.27999 62.36C7.27999 57.88 8.61332 53.7733 11.28 50.04C13.9467 46.3067 17.7333 43.3733 22.64 41.24C27.5467 39 33.1467 37.88 39.44 37.88C49.1467 37.88 56.9867 40.3333 62.96 45.24C68.9333 50.1467 72.1333 56.8667 72.56 65.4H58C57.68 60.8133 55.8133 57.1333 52.4 54.36C49.0933 51.5867 44.6133 50.2 38.96 50.2C33.7333 50.2 29.5733 51.32 26.48 53.56C23.3867 55.8 21.84 58.7333 21.84 62.36C21.84 65.24 22.7467 67.64 24.56 69.56C26.48 71.3733 28.8267 72.8667 31.6 74.04C34.48 75.1067 38.4267 76.3333 43.44 77.72C49.7333 79.4267 54.8533 81.1333 58.8 82.84C62.7467 84.44 66.1067 86.8933 68.88 90.2C71.76 93.5067 73.2533 97.8267 73.36 103.16C73.36 107.96 72.0267 112.28 69.36 116.12C66.6933 119.96 62.9067 123 58 125.24C53.2 127.373 47.6533 128.44 41.36 128.44Z"
+    stroke="#FFFAFA"
+    stroke-width="10"
+    mask="url(#path-1-outside-1_1_7)"
+  />
+  <path
+    d="M137.434 37.72C144.047 37.72 150.02 39.16 155.354 42.04C160.687 44.8133 164.847 49.0267 167.834 54.68C170.927 60.3333 172.474 67.2133 172.474 75.32V127H158.074V77.4C158.074 68.6533 155.887 61.9867 151.514 57.4C147.14 52.7067 141.167 50.36 133.594 50.36C125.914 50.36 119.78 52.76 115.194 57.56C110.714 62.36 108.474 69.3467 108.474 78.52V127H93.9137V8.59999H108.474V51.8C111.354 47.32 115.3 43.8533 120.314 41.4C125.434 38.9467 131.14 37.72 137.434 37.72Z"
+    stroke="#FFFAFA"
+    stroke-width="10"
+    mask="url(#path-1-outside-1_1_7)"
+  />
+  <path
+    d="M301.698 37.72C308.524 37.72 314.604 39.16 319.938 42.04C325.271 44.8133 329.484 49.0267 332.578 54.68C335.671 60.3333 337.217 67.2133 337.217 75.32V127H322.818V77.4C322.818 68.6533 320.631 61.9867 316.258 57.4C311.991 52.7067 306.178 50.36 298.818 50.36C291.244 50.36 285.217 52.8133 280.737 57.72C276.257 62.52 274.018 69.5067 274.018 78.68V127H259.617V77.4C259.617 68.6533 257.431 61.9867 253.057 57.4C248.791 52.7067 242.977 50.36 235.617 50.36C228.044 50.36 222.017 52.8133 217.537 57.72C213.057 62.52 210.817 69.5067 210.817 78.68V127H196.257V39.32H210.817V51.96C213.697 47.3733 217.537 43.8533 222.337 41.4C227.244 38.9467 232.631 37.72 238.497 37.72C245.857 37.72 252.364 39.3733 258.018 42.68C263.671 45.9867 267.884 50.84 270.658 57.24C273.111 51.0533 277.164 46.2533 282.818 42.84C288.471 39.4267 294.764 37.72 301.698 37.72Z"
+    stroke="#FFFAFA"
+    stroke-width="10"
+    mask="url(#path-1-outside-1_1_7)"
+  />
+  <path
+    d="M368.621 25.08C365.848 25.08 363.501 24.12 361.581 22.2C359.661 20.28 358.701 17.9333 358.701 15.16C358.701 12.3867 359.661 10.04 361.581 8.11999C363.501 6.19999 365.848 5.23999 368.621 5.23999C371.288 5.23999 373.528 6.19999 375.341 8.11999C377.261 10.04 378.221 12.3867 378.221 15.16C378.221 17.9333 377.261 20.28 375.341 22.2C373.528 24.12 371.288 25.08 368.621 25.08ZM375.661 39.32V127H361.101V39.32H375.661Z"
+    stroke="#FFFAFA"
+    stroke-width="10"
+    mask="url(#path-1-outside-1_1_7)"
+  />
+  <path
+    d="M395.036 82.84C395.036 73.88 396.85 66.04 400.476 59.32C404.103 52.4933 409.063 47.2133 415.356 43.48C421.756 39.7467 428.903 37.88 436.796 37.88C443.623 37.88 449.97 39.48 455.836 42.68C461.703 45.7733 466.183 49.88 469.276 55V8.59999H483.996V127H469.276V110.52C466.396 115.747 462.13 120.067 456.476 123.48C450.823 126.787 444.21 128.44 436.636 128.44C428.85 128.44 421.756 126.52 415.356 122.68C409.063 118.84 404.103 113.453 400.476 106.52C396.85 99.5867 395.036 91.6933 395.036 82.84ZM469.276 83C469.276 76.3867 467.943 70.6267 465.276 65.72C462.61 60.8133 458.983 57.08 454.396 54.52C449.916 51.8533 444.956 50.52 439.516 50.52C434.076 50.52 429.116 51.8 424.636 54.36C420.156 56.92 416.583 60.6533 413.916 65.56C411.25 70.4667 409.916 76.2267 409.916 82.84C409.916 89.56 411.25 95.4267 413.916 100.44C416.583 105.347 420.156 109.133 424.636 111.8C429.116 114.36 434.076 115.64 439.516 115.64C444.956 115.64 449.916 114.36 454.396 111.8C458.983 109.133 462.61 105.347 465.276 100.44C467.943 95.4267 469.276 89.6133 469.276 83Z"
+    stroke="#FFFAFA"
+    stroke-width="10"
+    mask="url(#path-1-outside-1_1_7)"
+  />
+  <path
+    d="M526.361 51.32V103C526.361 107.267 527.268 110.307 529.081 112.12C530.895 113.827 534.041 114.68 538.521 114.68H549.241V127H536.121C528.015 127 521.935 125.133 517.881 121.4C513.828 117.667 511.801 111.533 511.801 103V51.32H500.441V39.32H511.801V17.24H526.361V39.32H549.241V51.32H526.361Z"
+    stroke="#FFFAFA"
+    stroke-width="10"
+    mask="url(#path-1-outside-1_1_7)"
+  />
+</svg> -->
