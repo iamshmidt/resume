@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
+  <body onclick>
     <div class="loading">
       <div class="preloader">
         <svg
@@ -77,7 +77,7 @@
           />
         </svg>
         <div class="motto">
-          <h2>Front-end Developer / Designer</h2>
+          <h2>Front-end Developer</h2>
         </div>
       </div>
     </div>
@@ -98,32 +98,16 @@
               <span></span>
             </label>
           </div>
-          <div class="mob-menu" aria-hidden="true">
+          <div class="mob-menu">
             <ul>
               <li>
-                <span
-                  ><a class="mobile-menu-items" data-is-contact="true" href="javascript:void(0);"
-                    >Contact</a
-                  ></span
-                >
-                <!-- <button class="mobile-menu-items">Contact</button> -->
+                <a href="javascript:void(0)" data-is-contact="true">Contact</a>
               </li>
               <li>
-                <span
-                  ><a href="resume-attempt.pdf" class="mobile-menu-items"
-                    >Resume</a
-                  ></span
-                >
+                <a href="./resume.pdf" target="_blank">Resume</a>
               </li>
               <li>
-                <span
-                  ><a
-                    href="./pages/gallery.html"
-                    target="_blank"
-                    class="mobile-menu-items"
-                    >Gallery</a
-                  ></span
-                >
+                <a href="./pages/gallery.html" target="_blank">Gallery</a>
               </li>
             </ul>
           </div>
@@ -142,7 +126,7 @@
 
           <ul class="nav-menu">
             <li><a id="desktop-item-contact" href="#">Contact</a></li>
-            <li><a href="resume-attempt.pdf" target="_blank">Resume</a></li>
+            <li><a href="resume.pdf" target="_blank">Resume</a></li>
             <li><a href="./pages/gallery.html" target="_blank">Gallery</a></li>
           </ul>
         </div>
@@ -380,7 +364,10 @@
                     allows you to adjust the color you want and get hex color
                     code.
                   </p>
-                  <a href="./pages/video-player.html" type="button" target="_blank"
+                  <a
+                    href="./pages/video-player.html"
+                    type="button"
+                    target="_blank"
                     >Launch</a
                   >
                   <a
@@ -471,7 +458,9 @@
                 </div>
 
                 <div class="container-contact100-form-btn">
-                  <button type="submit" class="contact100-form-btn">Send Email</button>
+                  <button type="submit" class="contact100-form-btn">
+                    Send Email
+                  </button>
                 </div>
               </form>
 
@@ -498,8 +487,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    
-    <script src="script.js" defer></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
 
