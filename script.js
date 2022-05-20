@@ -27,55 +27,30 @@ window.addEventListener("load", function (e) {
 
   hamburger.addEventListener("click", () => {
     menu.classList.toggle("open");
-    //  if (hamburger.checked) {
-    //    hamburger.checked = true;
-    //  }else{
-    //    hamburger.checked = false;
-    //  }
-
-    // document.querySelector(".blur").style.filter = "blur(8px)";
   });
-  // console.log(menu.querySelectorAll("a"));
+  
 
-  // if(menuList.clicked==true){
-  //   console.log('clicked')
-  // }
-
-  // for (let i = 0; i < listItems.length; i++) {
-  //   if (listItems[i].clicked == true) {
-  //     console.log("clicked");
-  //   }
-  // }
-
-  // menuList.forEach((element) => {
-  //   console.log(element)
-  // });
+  //GSAP ANIMATION
 
   let tl = new TimelineMax({ onUpdate: updatePercentage });
   const controller = new ScrollMagic.Controller();
 
-  // const smth = document.querySelectorAll(".show");
   const blueDesign = document.querySelector(".bl-design");
-  // tl.add(TweenLite.to(blueDesign, 1, { x: 10 }));
   const message = document.querySelector(".message-container");
 
   const introText = message.innerText;
-  // console.log(introText);
 
   message.innerText = "";
-  // message.style.display = "none"
 
   const splitIntro = introText.split(" ");
 
   splitIntro.forEach((word) => {
     const div = document.createElement("div");
     div.innerHTML = word + "&nbsp;";
-    // div.classList.add('show');
     message.appendChild(div);
     div.style.fontSize = "50px";
   });
 
-  // const message = document.querySelector(".message-container");
 
   const smth = document.querySelectorAll(".message-container div");
 
@@ -86,7 +61,6 @@ window.addEventListener("load", function (e) {
       x: 100,
       y: 300,
       opacity: 0,
-      // color:"#000"
     },
     -0.1
   );
@@ -96,15 +70,11 @@ window.addEventListener("load", function (e) {
     triggerHook: "onLeave",
     duration: "100%",
   })
-    // .setPin(".something")
     .setTween(tl)
-    // .setTween(t2)
     .addTo(controller);
 
   function updatePercentage() {
     tl.progress();
-    // t2.progress();
-    // console.log(tl.progress());
   }
 
   //move on mouse gradient-container
@@ -135,6 +105,11 @@ window.addEventListener("load", function (e) {
 
   // (function ($) {
   //   "use strict";
+
+
+
+
+  // FORM VALIDATION
 
   //   /*==================================================================
   //     [ Validate after type ]*/
